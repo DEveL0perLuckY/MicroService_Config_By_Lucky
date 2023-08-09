@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Ecommerce
+    name: Config-Drfault
 eureka:
   instance:
     prefer-ip-address: true
