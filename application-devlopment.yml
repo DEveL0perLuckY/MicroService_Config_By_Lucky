@@ -1,1 +1,23 @@
 
+server:
+  port:1010
+
+spring:
+  application:
+    name: "config server"
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DEveL0perLuckY/MicroService_Config_By_Lucky
+          clone-on-start: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:2020/eureka
+
+
